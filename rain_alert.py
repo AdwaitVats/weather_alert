@@ -25,8 +25,8 @@ if any(condition < 700 for condition in conditions_12hours):
         client = Client(ACCOUNT_SID, AUTH_TOKEN)
         message=client.messages.create(
     body="Carry an ☂️. It is going to rain today.",
-    from_="+13602276421",
-    to="+919831610125",)
+    from_=os.environ["TWILIO_FROM"],
+    to=os.environ["MY_PHONE"],)
         print(message.status)
 
 
