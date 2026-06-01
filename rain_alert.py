@@ -1,5 +1,6 @@
-MY_LAT=47.809490
-MY_LONG=13.055010
+# Latitude and Longitude for Devanahalli
+MY_LAT=13.241715
+MY_LONG=77.713730
 ENDPOINT="https://api.openweathermap.org/data/2.5/forecast"
 from twilio.rest import Client
 import os
