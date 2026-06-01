@@ -29,4 +29,6 @@ jobs:
           OWM_API_KEY: ${{ secrets.OWM_API_KEY }}
           TWILIO_SID: ${{ secrets.TWILIO_SID }}
           TWILIO_TOKEN: ${{ secrets.TWILIO_TOKEN }}
+          TWILIO_FROM: ${{ secrets.TWILIO_FROM }}
+          MY_PHONE: ${{ secrets.MY_PHONE }}
         run: python rain_alert.py
